@@ -1,0 +1,518 @@
+{
+  "id": "10ef0faf-8e90-492c-bc56-601e21401275",
+  "version": "2.0",
+  "name": "FindUGCourse-2",
+  "url": "https://www.brookes.ac.uk/",
+  "tests": [{
+    "id": "9f0f407e-043f-44fa-9ab0-9ea5981af35a",
+    "name": "Scenario5",
+    "commands": [{
+      "id": "f05207fd-10a1-4940-bfc2-4ba3b65b0b99",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "698cd265-2c12-4892-9b33-a4ec41f9045d",
+      "comment": "Open home page",
+      "command": "assertTitle",
+      "target": "Oxford Brookes University - Oxford Brookes University ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7973ee3-dda4-43a2-8fa9-d9c4155a2fa3",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Oxford Brookes University - Oxford Brookes University ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbb2ffbf-275b-46f0-9ba5-4bd87bd15851",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1295x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "135a67be-92f2-4417-852a-018a623dedd5",
+      "comment": "Verify Menu exists or not",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"js-header\"]/div/ul/li[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96d04b31-d33f-45b1-b8b4-3b52d453631d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"js-header\"]/div/ul/li[1]/a",
+      "targets": [
+        ["css=.fa-bars > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce754c0d-c9c6-44c8-b34a-6f53bc23379b",
+      "comment": "Guaranteeing the Study button of the Menu is clicked",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "937b27fb-650c-46da-b919-5ca94070f614",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "num"
+    }, {
+      "id": "9450d463-18ad-4376-b939-0c0ec0e369db",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8c919d9-e7b0-420f-9851-32fcb76e9693",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${num}+1",
+      "targets": [],
+      "value": "num"
+    }, {
+      "id": "a846f36c-0022-4174-8388-6c5e3147527f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(@href, '/study/')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51e1e241-9cee-4adc-8b03-99f54039ba40",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '/study/')]",
+      "targets": [
+        ["css=.has-children:nth-child(1) .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5ef83aa-c216-4dc2-be62-172b5160da53",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${num}<5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54a7dab2-4378-41cb-bed2-a14b15af558c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(@href, '/study/')]",
+      "targets": [
+        ["linkText=Study", "linkText"],
+        ["css=.is-active:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/study/')]", "xpath:href"],
+        ["xpath=//aside/ul/li/a", "xpath:position"]
+      ],
+      "value": "label"
+    }, {
+      "id": "fc8c3320-bee1-47cc-8445-9864cb344be4",
+      "comment": "",
+      "command": "if",
+      "target": "${label}===\"Study\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "775f8fe8-60f3-416a-bbc6-5eb828bd5c4b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Study\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "b5ab7c83-256c-437d-a6ca-015895f1666e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e8296a4-02be-460d-8eec-7f77639d9e56",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "Study"
+    }, {
+      "id": "aadcd27b-ca30-49c3-91f8-05bd56c667a3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//strong[contains(.,'Study')]",
+      "targets": [],
+      "value": "Study"
+    }, {
+      "id": "2c386c5b-c249-415b-8ff4-47578d193235",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//strong[contains(.,'Study')]",
+      "targets": [
+        ["css=.has-children:nth-child(1) strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Study')]", "xpath:innerText"]
+      ],
+      "value": "${num}"
+    }, {
+      "id": "341a3252-62de-4779-8f69-fbe4103a4877",
+      "comment": "Open Study webpage",
+      "command": "assertTitle",
+      "target": "Study - Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90c16d79-fbd5-47ee-b646-bab9128a73ae",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Study - Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6efd37d4-8735-4465-a373-af949f20dd60",
+      "comment": "Check Undergraduate image",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"content\"]/section[4]/div/div/div/section[4]/div/div/div[1]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1504b31d-3fe5-478f-afe2-bd28be1a3efe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//main[@id='content']/section[4]/div/div/div/section[4]/div/div/div/div/a/div/figure/img",
+      "targets": [
+        ["css=.widget-section:nth-child(4) .column:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Undergraduate']", "xpath:img"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section[4]/div/div/div/div/a/div/figure/img", "xpath:idRelative"],
+        ["xpath=//figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fa6506-7e98-4c64-8666-d42b06b7f695",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,250)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9951bfb6-1314-45fd-91d5-c5af1f572d72",
+      "comment": "Open Undergraduate webpage",
+      "command": "assertTitle",
+      "target": "Undergraduate - Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d311b3fc-be65-4f3c-80c2-b1f7a38b95f8",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Undergraduate - Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "835653ed-01c3-407f-9006-d9caf8a965b4",
+      "comment": "Check the search bar in the Undergraduate page",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"content\"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[2]/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efa29615-3aed-42ea-a6e9-f9ef01e4570e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='cf-search-input']",
+      "targets": [
+        ["id=cf-search-input", "id"],
+        ["css=#cf-search-input", "css:finder"],
+        ["xpath=//input[@id='cf-search-input']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d7eed83-38bb-4d54-bf13-e310cd6ad684",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='cf-search-input']",
+      "targets": [
+        ["id=cf-search-input", "id"],
+        ["css=#cf-search-input", "css:finder"],
+        ["xpath=//input[@id='cf-search-input']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "computer science"
+    }, {
+      "id": "937b00fd-7f9d-44d6-b985-2450ffc528aa",
+      "comment": "",
+      "command": "storeValue",
+      "target": "xpath=//input[@id='cf-search-input']",
+      "targets": [],
+      "value": "course"
+    }, {
+      "id": "4fb71998-892c-4611-a947-1129c4ef336f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"computer science\",\" artificial intelligence\",\"information technology\"]",
+      "targets": [],
+      "value": "course_array"
+    }, {
+      "id": "94e0a41e-391d-413e-b3f9-29b764daa897",
+      "comment": "",
+      "command": "forEach",
+      "target": "course_array",
+      "targets": [],
+      "value": "iterator"
+    }, {
+      "id": "ad9c70b8-3f33-4d3e-8999-e5d6c094fd8d",
+      "comment": "",
+      "command": "if",
+      "target": "${iterator}===${course}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2812b6da-07f1-4c71-91d2-953e9c533b40",
+      "comment": "",
+      "command": "if",
+      "target": "${iterator}===\"computer science\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d088f855-dd5b-4407-8603-8bc30fc326f7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"computer science\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "86b7889f-ebd1-462f-be41-10cb0271cb6f",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94ac2fb7-b9dc-49b3-8bfb-4ed87b62ebfe",
+      "comment": "",
+      "command": "echo",
+      "target": "${iterator}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a605d01f-bddc-444e-91d8-6a8002f83003",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66e2c1a4-f9ef-4ae9-9bb8-b29ae03eb7de",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e61b2e0-43d6-46b2-9d7b-c795c434d929",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "750bb99e-5ad6-4edd-a037-32edb3c2c526",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "computer science"
+    }, {
+      "id": "f0b3c174-d9e8-4edf-9908-736d8efe5364",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select[@id='search-dropdown']",
+      "targets": [
+        ["id=search-dropdown", "id"],
+        ["css=#search-dropdown", "css:finder"],
+        ["xpath=//select[@id='search-dropdown']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f61ea6-2605-48de-9871-8882d1e96e3d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"content\"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[3]",
+      "targets": [],
+      "value": "Search"
+    }, {
+      "id": "78df6ad3-9134-403c-bc5b-af3523e1a65e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='cf-search-input']",
+      "targets": [
+        ["id=cf-search-input", "id"],
+        ["css=#cf-search-input", "css:finder"],
+        ["xpath=//input[@id='cf-search-input']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af9e3b16-6104-4953-8dda-79622086e495",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'Search')]",
+      "targets": [
+        ["css=.cf-search", "css:finder"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff8007eb-6e12-4d46-ae74-92cb622183c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Search')]",
+      "targets": [
+        ["css=.cf-search", "css:finder"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5da713a2-2242-4162-ab7b-81c07a2889c1",
+      "comment": "Open the webpage of search results",
+      "command": "assertTitle",
+      "target": "computer science, Oxford Brookes Course Finder, Funnelback Search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ba370b3-df9e-43d6-a09b-345515e3bc1f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "computer science, Oxford Brookes Course Finder, Funnelback Search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7651f2d-38f9-4a88-9a7b-f82faebc2e9c",
+      "comment": "Check the search bar",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"content\"]/div[3]/div/div[1]/div/form",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "870a8dcb-7587-44fb-8d63-95fb3ec4af88",
+      "comment": "",
+      "command": "storeValue",
+      "target": "xpath=//*[@id=\"query\"]",
+      "targets": [],
+      "value": "input_data"
+    }, {
+      "id": "e69085b4-1027-4f79-8cb4-4aa48e82060d",
+      "comment": "",
+      "command": "if",
+      "target": "${input_data}===\"computer science\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dbc152f-8e19-46a4-b6b0-78f110cdb499",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"computer science\"",
+      "targets": [],
+      "value": "correct"
+    }, {
+      "id": "6c3bb671-0305-4938-93ac-6f03aa2104ff",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f00eb8e-18fa-45cc-8829-3870b2d3b40a",
+      "comment": "",
+      "command": "echo",
+      "target": "${input_data}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aee55727-eb19-4886-beb4-b42998d9a2e6",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2a2a304-41ee-4b09-96eb-90c1341e3f5d",
+      "comment": "",
+      "command": "assert",
+      "target": "correct",
+      "targets": [],
+      "value": "computer science"
+    }, {
+      "id": "b748cf15-c4d6-41ba-acef-4ce149387e1b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"content\"]/div[3]/div/div[1]/div/form/div/div",
+      "targets": [],
+      "value": "Search"
+    }, {
+      "id": "093ecfc5-ba64-4225-9d82-67883561bbb9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ol[@id='search-results']/li[2]/h3/a",
+      "targets": [
+        ["css=.cf-search", "css:finder"],
+        ["xpath=//main[@id='content']/section[4]/div/div/div/section/div/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "557310a9-fdaa-45b8-9d36-871911df5e1e",
+      "comment": "Open Computer science course page",
+      "command": "assertTitle",
+      "target": "BSc (Hons) in Computer Science at Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2ba6560-6602-4601-a455-01a5c9e94ce1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "BSc (Hons) in Computer Science at Oxford Brookes University",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18b67241-ce5d-43a7-87d6-25aed991d268",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"content\"]/div[2]/p/a",
+      "targets": [],
+      "value": "Back to top"
+    }, {
+      "id": "52ca04b3-0b6f-44e1-a443-aec1e145120d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Back to top')]",
+      "targets": [
+        ["css=.m-left-5", "css:finder"],
+        ["xpath=//main[@id='content']/div[2]/p/a/span", "xpath:idRelative"],
+        ["xpath=//main/div[2]/p/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Back to top')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://www.brookes.ac.uk/"],
+  "plugins": []
+}

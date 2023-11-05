@@ -1,0 +1,396 @@
+    Running 'Scenario4'
+    19:34:24
+    1.open on / OK
+    19:34:25
+    2.assertTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:34:25
+    3.verifyTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:34:30
+    4.verifyElementPresent on xpath=//*[@id="js-header"]/div/ul/li[1]/a OK
+    19:34:30
+    5.setWindowSize on 1295x695 OK
+    19:34:30
+    6.mouseOver on xpath=//header[@id='js-header']/div/ul/li/a/span OK
+    19:34:31
+    7.mouseOut on xpath=//header[@id='js-header']/div/ul/li/a/span OK
+    19:34:31
+    8.click on xpath=//*[@id="js-header"]/div/ul/li[1]/a OK
+    19:34:31
+    10.executeScript on return 1 with value num OK
+    19:34:31
+    11.do OK
+    19:34:31
+    12.executeScript on return ${num}+1 with value num OK
+    19:34:32
+    13.verifyElementPresent on xpath=//a[contains(@href, '/study/')] OK
+    19:34:32
+    14.click on xpath=//a[contains(@href, '/study/')] OK
+    19:34:32
+    15.repeatIf on ${num}<5 OK
+    19:34:32
+    16.storeText on xpath=//a[contains(@href, '/study/')] with value label OK
+    19:34:35
+    17.if on ${label}==="Study" OK
+    19:34:35
+    18.executeScript on return "Study" with value output OK
+    19:34:35
+    19.end OK
+    19:34:36
+    20.assert on output with value Study OK
+    19:34:36
+    21.verifyText on xpath=//strong[contains(.,'Study')] with value Study OK
+    19:34:36
+    22.click on xpath=//strong[contains(.,'Study')] with value ${num} OK
+    19:34:36
+    23.assertTitle on Study - Oxford Brookes University OK
+    19:34:36
+    24.runScript on window.scrollTo(0,150) OK
+    19:34:42
+    25.verifyTitle on Study - Oxford Brookes University OK
+    19:34:42
+    26.verifyElementPresent on xpath=//*[@id="content"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[2]/div OK
+    19:34:42
+    27.verifyElementPresent on xpath=//*[@id="cf-dropdown"] OK
+    19:34:42
+    28.click on xpath=//select[@id='cf-dropdown'] OK
+    19:34:43
+    29.select on xpath=//select[@id='cf-dropdown'] with value label=Undergraduate OK
+    19:34:43
+    30.click on xpath=//select[@id='cf-dropdown']/option[2] OK
+    19:34:43
+    31.storeValue on xpath=//select[@id='cf-dropdown'] with value level OK
+    19:34:43
+    32.executeScript on return ["All levels","Undergraduate","Postgraduate","International pathway"] with value Level_array OK
+    19:34:43
+    33.forEach on Level_array with value iterator OK
+    19:34:44
+    34.if on ${iterator}===${level} OK
+    19:34:44
+    40.end OK
+    19:34:44
+    35.if on ${iterator}==="Undergraduate" OK
+    19:34:44
+    36.executeScript on return "Undergraduate" with value output OK
+    19:34:45
+    39.end OK
+    19:34:45
+    41.end OK
+    19:34:46
+    42.assert on output with value Undergraduate OK
+    19:34:46
+    43.click on xpath=//input[@id='cf-search-input'] OK
+    19:34:47
+    44.type on xpath=//input[@id='cf-search-input'] with value computer science OK
+    19:34:47
+    45.verifyValue on xpath=//input[@id='cf-search-input'] with value computer science OK
+    19:34:47
+    46.verifyText on xpath=//*[@id="content"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[2]/div/div[3] with value Search OK
+    19:34:47
+    47.click on xpath=//button[contains(.,'Search')] OK
+    19:34:48
+    48.assertTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:34:48
+    49.verifyTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:34:51
+    50.verifyElementPresent on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form OK
+    19:34:51
+    51.storeValue on xpath=//*[@id="query"] with value input_data OK
+    19:34:51
+    52.if on ${input_data}==="computer science" OK
+    19:34:51
+    53.executeScript on return "computer science" with value correct OK
+    19:34:52
+    56.end OK
+    19:34:52
+    57.assert on correct with value computer science OK
+    19:34:52
+    58.verifyText on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form/div/div with value Search OK
+    19:34:52
+    59.click on xpath=//ol[@id='search-results']/li[2]/h3/a OK
+    19:34:52
+    60.assertTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:34:53
+    61.verifyTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:34:58
+    62.verifyText on xpath=//*[@id="content"]/div[2]/p/a with value Back to top OK
+    19:34:58
+    63.click on xpath=//span[contains(.,'Back to top')] OK
+    19:34:59
+    'Scenario4' completed successfully
+    19:34:59
+    Running 'Scenario5'
+    19:34:59
+    1.open on / OK
+    19:35:00
+    2.assertTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:35:00
+    3.verifyTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:35:05
+    4.setWindowSize on 1295x695 OK
+    19:35:05
+    5.verifyElementPresent on xpath=//*[@id="js-header"]/div/ul/li[1]/a OK
+    19:35:06
+    6.click on xpath=//*[@id="js-header"]/div/ul/li[1]/a OK
+    19:35:06
+    8.executeScript on return 1 with value num OK
+    19:35:06
+    9.do OK
+    19:35:06
+    10.executeScript on return ${num}+1 with value num OK
+    19:35:07
+    11.verifyElementPresent on xpath=//a[contains(@href, '/study/')] OK
+    19:35:07
+    12.click on xpath=//a[contains(@href, '/study/')] OK
+    19:35:07
+    13.repeatIf on ${num}<5 OK
+    19:35:07
+    14.storeText on xpath=//a[contains(@href, '/study/')] with value label OK
+    19:35:10
+    15.if on ${label}==="Study" OK
+    19:35:10
+    16.executeScript on return "Study" with value output OK
+    19:35:11
+    17.end OK
+    19:35:11
+    18.assert on output with value Study OK
+    19:35:11
+    19.verifyText on xpath=//strong[contains(.,'Study')] with value Study OK
+    19:35:11
+    20.click on xpath=//strong[contains(.,'Study')] with value ${num} OK
+    19:35:11
+    21.assertTitle on Study - Oxford Brookes University OK
+    19:35:12
+    22.verifyTitle on Study - Oxford Brookes University OK
+    19:35:16
+    23.verifyElementPresent on xpath=//*[@id="content"]/section[4]/div/div/div/section[4]/div/div/div[1]/div/a OK
+    19:35:17
+    24.click on xpath=//main[@id='content']/section[4]/div/div/div/section[4]/div/div/div/div/a/div/figure/img OK
+    19:35:17
+    25.runScript on window.scrollTo(0,250) OK
+    19:35:17
+    26.assertTitle on Undergraduate - Oxford Brookes University OK
+    19:35:22
+    27.verifyTitle on Undergraduate - Oxford Brookes University OK
+    19:35:22
+    28.verifyElementPresent on xpath=//*[@id="content"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[2]/div OK
+    19:35:23
+    29.click on xpath=//input[@id='cf-search-input'] OK
+    19:35:23
+    30.type on xpath=//input[@id='cf-search-input'] with value computer science OK
+    19:35:23
+    31.storeValue on xpath=//input[@id='cf-search-input'] with value course OK
+    19:35:23
+    32.executeScript on return ["computer science"," artificial intelligence","information technology"] with value course_array OK
+    19:35:24
+    33.forEach on course_array with value iterator OK
+    19:35:24
+    34.if on ${iterator}===${course} OK
+    19:35:24
+    35.if on ${iterator}==="computer science" OK
+    19:35:24
+    36.executeScript on return "computer science" with value output OK
+    19:35:24
+    39.end OK
+    19:35:25
+    40.end OK
+    19:35:25
+    41.end OK
+    19:35:26
+    42.assert on output with value computer science OK
+    19:35:26
+    43.click on xpath=//select[@id='search-dropdown'] OK
+    19:35:27
+    44.verifyText on xpath=//*[@id="content"]/section[4]/div/div/div/section[1]/div/div/div/div/div/div[3] with value Search OK
+    19:35:27
+    45.click on xpath=//input[@id='cf-search-input'] OK
+    19:35:27
+    46.mouseOver on xpath=//button[contains(.,'Search')] OK
+    19:35:27
+    47.click on xpath=//button[contains(.,'Search')] OK
+    19:35:27
+    48.assertTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:35:28
+    49.verifyTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:35:30
+    50.verifyElementPresent on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form OK
+    19:35:30
+    51.storeValue on xpath=//*[@id="query"] with value input_data OK
+    19:35:30
+    52.if on ${input_data}==="computer science" OK
+    19:35:30
+    53.executeScript on return "computer science" with value correct OK
+    19:35:30
+    56.end OK
+    19:35:31
+    57.assert on correct with value computer science OK
+    19:35:31
+    58.verifyText on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form/div/div with value Search OK
+    19:35:31
+    59.click on xpath=//ol[@id='search-results']/li[2]/h3/a OK
+    19:35:31
+    60.assertTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:35:31
+    61.verifyTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:35:38
+    62.verifyText on xpath=//*[@id="content"]/div[2]/p/a with value Back to top OK
+    19:35:38
+    63.click on xpath=//span[contains(.,'Back to top')] OK
+    19:35:38
+    'Scenario5' completed successfully
+    19:35:39
+    Running 'Scenario14'
+    19:35:39
+    1.open on / OK
+    19:35:40
+    2.assertTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:35:40
+    3.verifyTitle on Oxford Brookes University - Oxford Brookes University OK
+    19:35:46
+    4.setWindowSize on 1295x695 OK
+    19:35:46
+    5.verifyElementPresent on xpath=//*[@id="js-header"]/div/ul/li[1]/a OK
+    19:35:46
+    6.click on xpath=//span[contains(.,'Menu')] OK
+    19:35:46
+    8.executeScript on return 1 with value num OK
+    19:35:47
+    9.do OK
+    19:35:47
+    10.executeScript on return ${num}+1 with value num OK
+    19:35:47
+    11.verifyElementPresent on xpath=(//a[contains(text(),'International')])[2] OK
+    19:35:47
+    12.click on xpath=(//a[contains(text(),'International')])[2] OK
+    19:35:48
+    13.repeatIf on ${num}<4 OK
+    19:35:48
+    14.storeText on xpath=(//a[contains(text(),'International')])[2] with value category OK
+    19:35:50
+    15.if on ${category}==="International" OK
+    19:35:50
+    16.executeScript on return "International" with value output OK
+    19:35:50
+    17.end OK
+    19:35:51
+    18.assert on output with value International OK
+    19:35:51
+    19.verifyElementPresent on xpath=//a[contains(text(),'International courses')] OK
+    19:35:51
+    20.storeText on xpath=//a[contains(text(),'International courses')] with value label OK
+    19:35:51
+    21.if on ${label}==="International courses" OK
+    19:35:51
+    22.executeScript on return "International courses" with value output OK
+    19:35:52
+    23.end OK
+    19:35:52
+    24.assert on output with value International courses OK
+    19:35:52
+    25.click on xpath=//a[contains(text(),'International courses')] OK
+    19:35:52
+    26.assertTitle on Courses - Oxford Brookes University OK
+    19:35:53
+    27.verifyTitle on Courses - Oxford Brookes University OK
+    19:35:58
+    28.runScript on window.scrollTo(0,250) OK
+    19:35:58
+    29.verifyText on xpath=//p[contains(.,'Undergraduate courses')] with value Undergraduate courses OK
+    19:35:58
+    30.click on xpath=//p[contains(.,'Undergraduate courses')] OK
+    19:35:58
+    31.assertTitle on Undergraduate courses - Oxford Brookes University OK
+    19:35:59
+    32.verifyTitle on Undergraduate courses - Oxford Brookes University OK
+    19:36:05
+    33.runScript on window.scrollTo(0,100) OK
+    19:36:05
+    34.verifyElementPresent on //*[@id="content"]/section[4]/div/div/div/section[2]/div/div[1]/div/div/div/div[2]/div OK
+    19:36:05
+    Warning implicit locators are deprecated, please change the locator to xpath=//*[@id="content"]/section[4]/div/div/div/section[2]/div/div[1]/div/div/div/div[2]/div
+    19:36:05
+    35.verifyElementPresent on xpath=//select[@id='cf-dropdown'] OK
+    19:36:05
+    36.click on xpath=//select[@id='cf-dropdown'] OK
+    19:36:05
+    37.select on xpath=//select[@id='cf-dropdown'] with value label=Undergraduate OK
+    19:36:06
+    38.click on xpath=//select[@id='cf-dropdown']/option[2] OK
+    19:36:06
+    39.storeValue on xpath=//select[@id='cf-dropdown'] with value level OK
+    19:36:06
+    40.executeScript on return ["All levels","Undergraduate","Postgraduate","International pathway"] with value Level_array OK
+    19:36:06
+    41.forEach on Level_array with value iterator OK
+    19:36:07
+    42.if on ${iterator}===${level} OK
+    19:36:07
+    48.end OK
+    19:36:07
+    43.if on ${iterator}==="Undergraduate" OK
+    19:36:08
+    44.executeScript on return "Undergraduate" with value output OK
+    19:36:08
+    47.end OK
+    19:36:08
+    49.end OK
+    19:36:10
+    50.assert on output with value Undergraduate OK
+    19:36:10
+    51.click on xpath=//input[@id='cf-search-input'] OK
+    19:36:10
+    52.type on xpath=//input[@id='cf-search-input'] with value computer science OK
+    19:36:10
+    53.storeValue on xpath=//input[@id='cf-search-input'] with value course OK
+    19:36:11
+    54.executeScript on return ["computer science"," artificial intelligence","information technology"] with value course_array OK
+    19:36:11
+    55.forEach on course_array with value iterator OK
+    19:36:11
+    56.if on ${iterator}===${course} OK
+    19:36:12
+    57.if on ${iterator}==="computer science" OK
+    19:36:12
+    58.executeScript on return "computer science" with value output OK
+    19:36:12
+    61.end OK
+    19:36:12
+    62.end OK
+    19:36:12
+    63.end OK
+    19:36:14
+    64.assert on output with value computer science OK
+    19:36:14
+    65.verifyText on xpath=//*[@id="content"]/section[4]/div/div/div/section[2]/div/div[1]/div/div/div/div[2]/div/div[3]/button with value Search OK
+    19:36:14
+    66.click on xpath=//button[contains(.,'Search')] OK
+    19:36:15
+    67.assertTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:36:15
+    68.verifyTitle on computer science, Oxford Brookes Course Finder, Funnelback Search OK
+    19:36:18
+    69.verifyElementPresent on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form OK
+    19:36:18
+    70.storeValue on xpath=//*[@id="query"] with value input_data OK
+    19:36:18
+    71.if on ${input_data}==="computer science" OK
+    19:36:18
+    72.executeScript on return "computer science" with value correct OK
+    19:36:18
+    75.end OK
+    19:36:19
+    76.assert on correct with value computer science OK
+    19:36:19
+    77.verifyText on xpath=//*[@id="content"]/div[3]/div/div[1]/div/form/div/div with value Search OK
+    19:36:19
+    78.click on xpath=//ol[@id='search-results']/li[2]/h3/a/strong[2] OK
+    19:36:19
+    79.assertTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:36:20
+    80.verifyTitle on BSc (Hons) in Computer Science at Oxford Brookes University OK
+    19:36:26
+    81.verifyText on xpath=//*[@id="content"]/div[2]/p/a with value Back to top OK
+    19:36:27
+    82.click on xpath=//span[contains(.,'Back to top')] OK
+    19:36:27
+    'Scenario14' completed successfully
+    19:36:28
